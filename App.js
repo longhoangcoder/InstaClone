@@ -9,6 +9,7 @@ import Search from './src/components/screens/Search';
 import Reels from './src/components/screens/Reels';
 import Activity from './src/components/screens/Activity';
 import Profile from './src/components/screens/Profile';
+import Status from './src/components/screenComponents/Status';
 const App = () => {
   const Stack = createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
@@ -62,6 +63,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Bottom" component={bottomTabScreen} />
+        <Stack.Screen name="Status" component={Status} />
       </Stack.Navigator>
     </NavigationContainer>
   );
